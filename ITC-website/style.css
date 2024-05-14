@@ -1,0 +1,1092 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.stickynav{
+    box-sizing: border-box;
+    height: 84px;
+    width: 100vw;
+    background-color: rgb(23, 24, 25);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    width: 1110px;
+    padding: 0 15px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.logo img{
+    object-fit: contain;
+    height: 52px;
+    width: 70px;
+    margin-right: 1rem;
+    padding-bottom: 5px;
+}
+
+.navoptions{
+    box-sizing: border-box;
+    height: 25px;
+    width: 972px;
+    align-items: center;
+    font-size: 0.9rem;
+    display: flex;
+    margin-left: 52px;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #f2f3f4;
+}
+.navoptyp1 , .dropop {
+    color: #f2f3f4;
+    transition: 0.25s;
+    display: flex;
+    padding: 5px;
+}
+
+.maintcontent{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navoptyp1:hover{
+    padding: 5px 8px;
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.dropop:hover{
+    padding: 5px 8px;
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.laboptions{
+    height: 6rem;
+    width: 10rem;
+    background-color: #f2f3f4;
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 55%;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 1s;
+    z-index: 4;
+}
+
+.laboptions>label{
+    font-size: 1.25rem;
+}
+
+.laboptions>label:hover{
+    color: red;
+    
+}
+
+.laboptions a{
+    width: 8rem;
+    color: black;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.laboptions>a:hover{
+    color: black;
+    background-color: #96a0ab;
+    font-size: 1rem;
+}
+
+#labcheck{
+    display:none;
+}
+
+#labcheck:checked~.laboptions{
+    display: flex;
+    opacity: 1;
+}
+
+.portaloptions{
+    height: 10rem;
+    width: 15rem;
+    background-color: #f2f3f4;
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 60%;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 10px;
+    z-index: 4;
+}
+
+.portaloptions>label{
+    font-size: 1.25rem;
+}
+
+.portaloptions>label:hover{
+    color: red;
+    
+}
+
+.portaloptions a{
+    width: 13rem;
+    color: black;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.portaloptions>a:hover{
+    color: black;
+    background-color: #96a0ab;
+    font-size: 1rem;
+}
+
+#portalcheck{
+    display:none;
+}
+
+#portalcheck:checked~.portaloptions{
+    display: flex;
+}
+
+.wroptions{
+    height: 4rem;
+    width: 10rem;
+    background-color: #f2f3f4;
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 70%;
+    align-items: center;
+    border: solid 2px;
+    border-radius: 10px;
+    z-index: 4;
+}
+
+.wroptions>label{
+    font-size: 1.25rem;
+}
+
+.wroptions>label:hover{
+    color: red;
+    
+}
+
+.wroptions a{
+    width: 8rem;
+    color: black;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.wroptions>a:hover{
+    color: black;
+    background-color: #96a0ab;
+    font-size: 1rem;
+}
+
+#wrcheck{
+    display:none;
+}
+
+#wrcheck:checked~.wroptions{
+    display: flex;
+}
+
+#topbarcheck{
+    display: none;
+}
+
+.topbari-1,.topbari-2{
+    color: white;
+    font-size: 1.85rem;
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    display: none;
+}
+
+.maincontent{
+    position: absolute;
+    top: 84px;
+    left: 0;
+    display: flex;
+    flex: 1;
+}
+
+.videoback{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+video{
+    box-sizing: border-box;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;    
+}
+
+.text{
+    z-index: 2;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome{
+    height: 690px;
+    width: 100vw;
+    justify-content: center;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(23, 24, 25);
+    opacity: 0.85;
+    z-index: 2;
+}
+
+.wcontainer{
+    width: 100vw;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.wtextarea{
+    padding-left: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.l1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 0.5rem 0;
+    display: flex;
+}
+
+.l2{
+    color: red;
+    font-size: 3rem;
+    font-weight: 550;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l3{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    display: flex
+}
+
+.about{
+    padding: 10rem 0;
+    background-color: transparent;
+    width: 100vw;
+    height: 450px;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.acontainer{
+    margin: 0 5rem;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.atextarea{
+    padding:0 10rem 0 5rem;
+    height: 460px;
+    width: 100%;
+    display: flex;
+   
+}
+
+.alogo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alogo img{
+    height: 15rem;
+    width: 20rem;
+}
+
+.atext{
+    width: 30rem;
+    overflow: hidden;
+}
+
+.line{
+    margin-top: 6rem;
+    height: 60%;
+    width: 5rem;
+    border-left: solid;
+    display: flex;
+    align-items: center;
+}
+
+.al1{
+    padding: 0 2rem;
+    color: red;
+    font-size: 4rem;
+    font-weight: 800;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+}
+
+.al2{
+    padding:1rem 0 0 6rem;
+    width: 30rem;
+    height: 2.5rem;
+    color: #f2f3f4;
+    font-size: 1.5rem;
+}
+
+.al3{
+    margin-top: 1rem;
+    padding-left: 6rem;
+    color: #f2f3f4;
+    font-size: 1.5rem;
+
+}
+
+.hidden{
+    opacity: 0;
+    filter:blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) ;
+}
+
+.phidden{
+    opacity: 0;
+    filter:blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.pshow{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0) ;
+}
+
+.por{
+    padding: 10rem 0 5rem 0;
+    background-color: transparent;
+    width: 100vw;
+    height: 450px;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pcontainer{
+    margin: 0 5rem;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.ptextarea{
+    padding:0 5rem 0 3rem;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.plogo{
+    height: 100%;
+    width: auto;
+    display: flex;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    justify-content: center;
+}
+
+.plogo img{
+    height: 20rem;
+}
+
+.ptext{
+    height: 100%;
+    width: 50rem;
+    overflow: hidden;
+    display: flex;flex-direction: column;
+}
+
+.pline{
+    margin-top: 4rem;
+    height: 60%;
+    width: 5rem;
+    border-right: solid;
+    display: flex;
+    align-items: center;
+}
+
+.pl1{
+    padding: 0 2rem 0 2rem;
+    color: red;
+    font-size: 3.5rem;
+    font-weight: 800;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.pl2{
+    margin-top: 1rem;
+    color: #f2f3f4;
+    font-size: 1.5rem;
+
+}
+
+.footer{
+    height: 6rem;
+    width: 100vw;
+    z-index: 2;
+}
+
+.fcontainer{
+    height: 100%;
+    width: 100%;
+}
+
+.ftextarea{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 4rem;
+    padding: 1rem 10rem;
+}
+
+.ftext{
+    font-size: 1rem;
+    color: #f2f3f4;
+}
+
+.socials a{
+    padding: 0 1rem;
+    opacity: 0.7;
+}
+
+.socials>a:hover{
+    opacity: 1;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 1200px){
+    .navoptions{
+        width: 844px;
+        height: 30px;
+    }
+}
+
+@media(max-width:1040px){
+    .navoptions{
+        width: 780px;
+    }
+
+    .navoptyp1{
+        width: 5rem;
+        flex-wrap: wrap;
+    }
+
+    .al1{
+        font-size: 3rem;
+    }
+
+    .al2{
+        padding-left: 3rem;
+        font-size: 1.15rem;
+    }
+
+    .al3{
+        padding-left: 3rem;
+        font-size: 1.25rem;
+    }
+
+    .pl1{
+        font-size: 2.5rem;
+        padding-left: 0;
+    }
+
+    .pl2{
+        font-size: 1.25rem;
+    }
+}
+
+@media(max-width: 960px)
+{
+    .navoptions{
+        height: 75px;
+        width: 700px;
+    }
+
+    .navoptyp1{
+        width: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .dropop{
+        width: 3rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:900px){
+
+    .topbari-1{
+        display: flex;
+    }
+
+    .navoptions{
+        margin: 0;
+        position: fixed;
+        top: 84px;
+        left: 0;
+        flex-direction: column;
+        width: 100vw;
+        height: 260px;
+        background-color: rgb(23, 24, 25);
+        opacity: 0;
+    }
+
+    #topbarcheck:checked~.navoptions{
+        opacity: 1;
+    }
+
+    #topbarcheck:checked~.topbari-2{
+        display: flex;
+    }
+
+    #topbarcheck:checked~.topbari-1{
+        opacity: 0;
+    }
+
+    .navoptyp1,.dropop{
+        width: 10rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container{
+        margin-left: 20%;
+    }
+
+    .topbari-1{
+        opacity: 1;
+    }
+
+    .topbari-1:hover{
+        color: red;
+    }
+
+    .topbari-2:hover{
+        color: red;
+    }
+
+    .laboptions{
+        top: 15rem;
+        left: 35%;
+    }
+
+    .portaloptions{
+        top: 18rem;
+        left: 20%;
+    }
+
+    .wroptions{
+        top: 20rem;
+        left: 35%;
+    }
+
+    .logo{
+        position: fixed;
+        top: 1rem;
+        left: 20%;
+    }
+
+    .wcontainer{
+        top: 50px;
+        height: 500px;
+    }
+
+    .l1{
+        font-size: 2rem;
+    }
+
+    .l2{
+        font-size: 2rem;
+        justify-content: center;
+    }
+
+    .l3{
+        font-size: 1rem;
+    }
+
+    .acontainer{
+        margin: 0 1rem;
+    }
+
+    .atextarea{
+        padding: 0 2rem;
+    }
+
+    .pcontainer{
+        margin: 0 1rem;
+    }
+
+    .ptextarea{
+        padding: 0 2rem;
+    }
+}
+
+@media(max-width:600px){
+    .l1{
+        font-size: 1.5rem;
+    }
+
+    .l2{
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+
+    .l3{
+        font-size: 0.5rem;
+    }
+
+    .about{
+        height: 500px;
+        padding: 3rem 0;
+    }
+
+    .acontainer{
+        height: 100%;
+        margin: 0 1rem;
+    }
+
+    .atextarea{
+        height: 100%;
+        flex-direction: column;
+        padding: 0 2rem;
+
+    }
+
+    .line{
+        display: none;
+    }
+
+    .alogo{
+        height: 10rem;
+    }
+
+    .alogo img{
+        height: 5rem;
+        width: 8rem;
+    }
+
+    .atext{
+        width: 100%;
+        height: 100%;
+    }
+
+    .al1{
+        padding: 0 1rem;
+        font-size: 2rem;
+        justify-content: flex-start;
+    }
+
+    .al2{
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+
+    .al3{
+        padding: 0 1rem;
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .por{
+        padding: 2rem 0;
+        height: 500px;
+    }
+
+    .pcontainer{
+        margin: 0  2rem;
+    }
+
+    .ptextarea{
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .ptext{
+        width: 100%;
+    }
+
+    .pline{
+        display: none;
+    }
+
+    .pl1{
+        height: 3rem;
+        font-size: 2rem;
+    }
+
+    .pl2{
+        font-size: 1rem;
+    }
+
+    .plogo{
+        padding: 0;
+    }
+
+    .plogo img{
+        height: 13rem;
+    }
+
+    .ftextarea{
+        padding: 1rem 0;
+    }
+}
+
+@media(max-width: 380px){
+
+    .wtextarea{
+        padding: 0;
+    }
+
+    .l2{
+       text-align: center;
+    }
+
+    .about{
+        height: 500px;
+    }
+
+    .por{
+        height: 550px;
+    }
+
+    .pcontainer{
+        margin: 0 1rem;
+    }
+
+    .ftext{
+        font-size: 0.75rem;
+    }
+
+    .socials a{
+        padding: 0 0.5rem;
+    }
+
+    .stickynav{
+        height: 5.5rem;
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        position: fixed;
+        top: 1rem;
+        left: 3rem;
+    }
+
+    .navoptions{
+        top: 5rem;
+    }
+
+    .l1{
+        font-size: 1.5rem;
+    }
+
+    .l2{
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+
+    .l3{
+        font-size: 0.5rem;
+    }
+
+    .atextarea{
+        padding: 0;
+    }
+
+    .por{
+        padding: 0;
+        height: 650px;
+    }
+
+    .ptextarea{
+        height: 100%;
+    }
+    
+}
+
+@media(min-width: 2400px){
+    .videoback{
+        top: 0;
+        left: 0;
+    }
+
+    video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .stickynav{
+        height: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    .container{
+        height: 100px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo img{
+        height: 90px;
+        width: 100px;
+    }
+
+    .navoptions{
+        width: 1800px;
+        height: 100%;
+        font-size: 2rem;
+    }
+
+    .laboptions{
+        height: 15rem;
+        width: 20rem;
+        top: 100px;
+    }
+
+    .laboptions a{
+        width: 80%;
+    }
+
+    .laboptions>label{
+        font-size: 2.5rem;
+    }
+
+    .portaloptions{
+        height: 20rem;
+        width: 30rem;
+        top: 100px;
+    }
+
+    .portaloptions>label{
+        font-size: 2.5rem;
+    }
+
+    .portaloptions a{
+        width: 80%;
+    }
+
+    .wroptions{
+        height: 8rem;
+        width: 20rem;
+    }
+
+    .wroptions>label{
+        font-size: 2.5rem;
+    }
+
+    .welcome{
+        height: 1300px;
+    }
+
+    .wcontainer{
+        height: 20%;
+    }
+
+    .wtextarea{
+        width: 80%;
+    }
+
+    .l1{
+        font-size: 8rem;
+    }
+
+    .l2{
+        font-size: 8rem;
+        text-align: center;
+    }
+
+    .l3{
+        font-size: 3rem;
+    }
+
+    .about{
+        height: 1300px;
+    }
+
+    .acontainer{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .atextarea{
+        padding-left: 20rem;
+        padding-right: 0;
+        height: 65%;
+        width: 100%;
+    }
+
+    .alogo img{
+        height: 30rem;
+        width: 40rem;
+    }
+
+    .line{
+        top: 20rem;
+    }
+
+    .atext{
+        width: 70%;
+    }
+
+    .al1{
+        font-size: 8rem;
+        justify-content: flex-start;
+        padding-left: 4rem;
+    }
+
+    .al2{
+        font-size: 4rem;
+        height: 8rem;
+        width: 100%;
+        padding-left: 4rem;
+    }
+
+    .al3{
+        padding-left: 4rem;
+        font-size: 3rem;
+    }
+
+    .por{
+        height: 1300px;
+    }
+
+    .pcontainer{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ptextarea{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        height: 65%;
+        width: 100%;
+    }
+
+    .plogo img{
+        height: 50rem;
+        width: 60rem;
+    }
+
+    .pline{
+        height: 80%;
+        top: 30rem;
+    }
+
+    .ptext{
+        width: 50%;
+    }
+
+    .pl1{
+        font-size: 8rem;
+        justify-content: flex-start;
+        padding-left: 4rem;
+    }
+
+    .pl2{
+        padding-left: 4rem;
+        font-size: 3rem;
+    }
+
+    .footer{
+        height: 10rem;
+    }
+
+    .ftext{
+        font-size: 2.5rem;
+    }
+
+    .socials a{
+        font-size: 2rem;
+        padding: 0 2rem;
+        height: 3rem;
+    }
+
+    .socials>a:hover{
+        opacity: 1;
+        font-size: 2.5rem;
+    }
+}
