@@ -1,0 +1,45 @@
+*{
+    background-color: rgb(37, 34, 34);
+}
+
+body{
+    text-align: center;
+}
+
+h1{
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+input{
+    background-color: aliceblue;
+    height: 20px;
+    width: 300px;
+    margin: 0 10px;
+}
+
+button{
+    background-color: aliceblue;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: rgb(196, 203, 210);
+}
+
+.delete{
+    margin-left: 5px;
+}
+
+ul{
+    padding: 0;
+    width: 300px;
+    margin: 10px auto ;
+    color: aliceblue;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+}
