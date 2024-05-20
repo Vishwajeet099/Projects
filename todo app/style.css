@@ -19,13 +19,13 @@ input{
 }
 
 button{
-    background-color: aliceblue;
+    background-color: rgb(196, 203, 210);
     border: solid black 2px;
     border-radius: 5px;
 }
 
 button:hover{
-    background-color: rgb(196, 203, 210);
+    background-color: aliceblue;
 }
 
 .delete{
