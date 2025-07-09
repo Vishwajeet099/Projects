@@ -1,0 +1,18 @@
+body, html, #root, .App {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.canvas-container {
+  height: 100vh;
+}
+
+.title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  color: white;
+}
